@@ -1,15 +1,65 @@
 <style>
-div.welcome{
+#welcome{
     border: 2px solid blue;
     position: absolute;
     left: 40%;
     right: 40%;
     top: 50%;
     text-align: center;
+    background-color: antiquewhite;
     
 }
+div.title{
+    font-weight: 500;
+    font-size: 300%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position:absolute;
+    left: 35%;
+    right: 35%;
+    top:10%;
+    text-align: center;
 
+}
+li{
+   
+    list-style-type: none;
+    border:1px solid white;
+    color: white;
+    text-align: center;
+    background-color: black;
+    transition: 1s;
+    
+
+}
+li:hover{ 
+    background-color: antiquewhite;
+    color: black;
+    transition: 0.3s;
+    font-weight: bold;
+
+}
+ul.menu{
+    width: 120px;
+    position: absolute;
+    top: 2%;
+    left: 1px;
+}
+a{
+    text-decoration: none;
+}
 </style>
+<body style= "background-color: rgb(116, 133, 242)">
+<ul class="menu">
+<a href="My website/Index.html"><li>Home</li></a>
+<a href="My website/Dailydog.html"><li>Daily dog</li> </a>
 
-<div class="welcome">
-Welcome to my website. Use the menu to navigate the pages</div>
+
+</ul>
+    <div class="title">
+    Cute Dog Photos
+</div>
+
+<div id="welcome">
+Welcome to my website! Use the menu in the top left to navigate the every growing repository of cute dogs.</div>
+
+</body>
