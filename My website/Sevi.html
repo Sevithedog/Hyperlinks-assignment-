@@ -1,121 +1,125 @@
 <!DOCTYPE html>
-<Style>
-   #sevihover:hover ~ #Sevi7{
-      display:block;
-   }
-   #sevihover:hover {
-      cursor: crosshair;
+<style>
+   .main {
+      background-color: rgb(0, 34, 255);
+      display: grid;
    }
 
-.main{
-   background-color: rgb(0, 34, 255);
-   display: grid;
-}
-li{
-   
-   list-style-type: none;
-   border:1px solid white;
-   color: white;
-   text-align: center;
-   background-color: black;
-   transition: 1s;
-   
+   li {
 
-}
-li.selected{
-    background-color: antiquewhite;
-    color: black; 
-    transition:0s;
-}
-li:hover{ 
-   background-color: antiquewhite;
-   color: black;
-   transition: 0.3s;
-   font-weight: bold;
+      list-style-type: none;
+      border: 1px solid white;
+      color: white;
+      text-align: center;
+      background-color: black;
+      transition: 1s;
 
-}
-ul.menu{
-   width: 130px;
-   position: absolute;
-   top: 2%;
-   left: 1px;
-}
-a{
-   text-decoration: none;
-} 
 
-      #Sevi1{
-         position:fixed;
-         width:200px;
-         height:200px;
-         left: 400px;
-         top:100px
-      }
-      #Sevi2{
-        
-         width:200px;
-         height:200px;
-         position: fixed;  
-         top:100px;
-         left:620px; 
-      }
-      #Sevi3{
-         width:200px;
-         height:200px;
-         position: fixed;  
-         top:100px;
-         left:840px; 
-           }
-      #Sevi4{
-         width:200px;
-         height:200px;
-         position: fixed; 
-         top: 350px;
-         left:400px;
-      }
-      #Sevi5{
-         width:200px;
-         height:200px;
-         position: fixed; 
-         top: 350px;
-         left:620px;
-      }
-      #Sevi6{
-         width:200px;
-         height:200px;
-         position: fixed; 
-         top: 350px;
-         left:840px;
-      }
-      div.text{
-         position: absolute;
-         top: 600px;
-         left: 40%;
-         right: 40%;
-         text-align: center;
-         color: white;
-         font-size: 150%;
-         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
+   }
 
-      #Sevi7{
-         position: absolute;
-         top:575px;
-         left: 325px;
-         width: 150px;
-         height: 150px;
-         display:none;
-         
-      }
-      #Sevi8{
+   li.selected {
+      background-color: antiquewhite;
+      color: black;
+      transition: 0s;
+   }
+
+   li:hover {
+      background-color: antiquewhite;
+      color: black;
+      transition: 0.3s;
+      font-weight: bold;
+
+   }
+
+   ul.menu {
+      width: 130px;
+      position: absolute;
+      top: 2%;
+      left: 1px;
+   }
+
+   a {
+      text-decoration: none;
+   }
+
+   #Sevi1 {
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      left: 400px;
+      top: 100px
+   }
+
+   #Sevi2 {
+
+      width: 200px;
+      height: 200px;
+      position: fixed;
+      top: 100px;
+      left: 620px;
+   }
+
+   #Sevi3 {
+      width: 200px;
+      height: 200px;
+      position: fixed;
+      top: 100px;
+      left: 840px;
+   }
+
+   #Sevi4 {
+      width: 200px;
+      height: 200px;
+      position: fixed;
+      top: 350px;
+      left: 400px;
+   }
+
+   #Sevi5 {
+      width: 200px;
+      height: 200px;
+      position: fixed;
+      top: 350px;
+      left: 620px;
+   }
+
+   #Sevi6 {
+      width: 200px;
+      height: 200px;
+      position: fixed;
+      top: 350px;
+      left: 840px;
+   }
+
+   div.text {
+      position: absolute;
+      top: 600px;
+      left: 40%;
+      right: 40%;
+      text-align: center;
+      color: white;
+      font-size: 150%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+
+   #Sevi7 {
+      position: absolute;
+      top: 575px;
+      left: 325px;
+      width: 150px;
+      height: 150px;
+   }
+
+   #Sevi8 {
       position: absolute;
       top: 50px;
       left: 1200px;
       width: 10px;
       height: 10px;
       z-index: 1;
-      }
-      #Sevi8:hover{
+   }
+
+   #Sevi8:hover {
       position: absolute;
       top: 50px;
       left: 400px;
@@ -124,42 +128,70 @@ a{
       transition: 2s;
       z-index: 2;
 
-      }
-      .what{
-         position: absolute;
-         top: 60px;
-         left: 1100px;
-         width: 200px;
-         text-align: center;
-         font-family:'Courier New', Courier, monospace;
-         color: white;
-         font-size: 50%;
-      }
-      .black{
-         color: black;
-      }
+   }
 
+   .what {
+      position: absolute;
+      top: 60px;
+      left: 1100px;
+      width: 200px;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+      font-size: 50%;
+   }
 
+   .black {
+      color: black;
 
-</Style>
+   }
+
+   #test {
+      position: absolute;
+      top: 600px;
+      left: 100px;
+      height: 50px;
+      width: 50px;
+   }
+
+   #sevihover:hover {
+      cursor: crosshair;
+   }
+
+   #s2:hover~#test {
+      color: white;
+
+   }
+</style>
+
 <body class="main">
-    <ul class="menu">
-        <a href="Index.html"><li>Home</li></a>
-        <a href="Dailydog.html"><li>Daily dog</li> </a>
-        <a href="Sevi.html"><li class="selected">The Bestest</li></a>
-        <a href="Discover.html"><li>Discover</li></a>
+   <ul class="menu">
+      <a href="Index.html">
+         <li>Home</li>
+      </a>
+      <a href="Dailydog.html">
+         <li>Daily dog</li>
+      </a>
+      <a href="Sevi.html">
+         <li class="selected">The Bestest</li>
+      </a>
+      <a href="Discover.html">
+         <li>Discover</li>
+      </a>
+   </ul>
+   <img id="Sevi1" src="Sevi1.jpg">
+   <img id="Sevi2" src="Sevi2.jpg">
+   <img id="Sevi3" src="Sevi3.jpg">
+   <img id="Sevi4" src="Sevi4.jpg">
+   <img id="Sevi5" src="Sevi5.jpg">
+   <img id="Sevi6" src="Sevi6.jpg">
+   <img id="Sevi7" src="Sevi7.jpg">
+   <img id="Sevi8" src="Sevi8.jpg">
 
-
-</ul>
-
-<img id="Sevi1" src="Sevi1.jpg">
-<img id="Sevi2" src="Sevi2.jpg">
-<img id="Sevi3" src="Sevi3.jpg">
-<img id="Sevi4" src="Sevi4.jpg">
-<img id="Sevi5" src="Sevi5.jpg">
-<img id="Sevi6" src="Sevi6.jpg">
-<img id="Sevi8" src="Sevi8.jpg">
-
-<div class="what">What's this?</div>
-<div class="text"> <span class = "black" id = "sevihover"> Sevi </span> is the bestest and the cutest</div>
+   <div class="what">What's this?</div>
+   <div class="text">
+      <span class="black" id="sevihover"> Sevi </span> is the bestest and the cutest
+   </div>
+   <div id="test">content</div>
+   <span id="s2">test</span>
 </body>
