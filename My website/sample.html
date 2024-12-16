@@ -1,0 +1,19 @@
+
+<style>
+    #x:hover {
+        cursor:crosshair;
+    }
+    #x:hover ~ #y {
+        border: 3px solid red;   
+        visibility: visible;
+    }
+
+    #y {
+        color: green;
+        visibility: hidden;
+    }
+</style>
+<body>
+    <span id="x">trigger</span>
+    <img id="y" src="Sevi7.jpg">
+</body>
