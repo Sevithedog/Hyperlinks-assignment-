@@ -1,19 +1,37 @@
 
 <style>
-    #x:hover {
-        cursor:crosshair;
-    }
-    #x:hover ~ #y {
-        border: 3px solid red;   
-        visibility: visible;
-    }
+   .text {
+      position: absolute;
+      top: 600px;
+      left: 40%;
+      right: 40%;
+      text-align: center;
+      color: white;
+      font-size: 150%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   
+    #Sevi7 {
+      position: absolute;
+      top: 575px;
+      left: 325px;
+      width: 150px;
+      height: 150px;
+      visibility: hidden;
+   }
+   #sevihover{
+   z-index: 2;
+   color: black;
+   }
 
-    #y {
-        color: green;
-        visibility: hidden;
-    }
+
+   #sevihover:hover {
+      cursor: crosshair;
+   }
+   #sevihover:hover ~ #Sevi7 {
+    visibility: visible; 
+   }
 </style>
-<body>
-    <span id="x">trigger</span>
-    <img id="y" src="Sevi7.jpg">
-</body>
+
+    <span class = "text" id="sevihover"> Sevi </span>  <span class = "text">is the bestest and the cutest</span>
+    <img id="Sevi7" src="Sevi7300.jpg">

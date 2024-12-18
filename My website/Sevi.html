@@ -3,6 +3,7 @@
    .main {
       background-color: rgb(0, 34, 255);
       display: grid;
+      z-index: -1;
    }
 
    li {
@@ -90,8 +91,17 @@
       top: 350px;
       left: 840px;
    }
-
-   div.text {
+   .sp{
+      position: absolute;
+      top: 600px;
+      left: 30%;
+      right: 50%;
+      text-align: center;
+      color: white;
+      font-size: 150%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .text {
       position: absolute;
       top: 600px;
       left: 40%;
@@ -108,6 +118,7 @@
       left: 325px;
       width: 150px;
       height: 150px;
+      visibility: hidden;
    }
 
    #Sevi8 {
@@ -116,7 +127,7 @@
       left: 1200px;
       width: 10px;
       height: 10px;
-      z-index: 1;
+      z-index: -1;
    }
 
    #Sevi8:hover {
@@ -139,29 +150,20 @@
       font-family: 'Courier New', Courier, monospace;
       color: white;
       font-size: 50%;
+      z-index: -1;
    }
 
-   .black {
-      color: black;
-
-   }
-
-   #test {
-      position: absolute;
-      top: 600px;
-      left: 100px;
-      height: 50px;
-      width: 50px;
-   }
-
+   #sevihover{
+   z-index: 1;
+   color: black;
+}
    #sevihover:hover {
       cursor: crosshair;
    }
-
-   #s2:hover~#test {
-      color: white;
-
+   #Sevihover:hover ~ #Sevi7{
+      visibility: visible;
    }
+
 </style>
 
 <body class="main">
@@ -185,13 +187,9 @@
    <img id="Sevi4" src="Sevi4.jpg">
    <img id="Sevi5" src="Sevi5.jpg">
    <img id="Sevi6" src="Sevi6.jpg">
-   <img id="Sevi7" src="Sevi7.jpg">
    <img id="Sevi8" src="Sevi8.jpg">
 
    <div class="what">What's this?</div>
-   <div class="text">
-      <span class="black" id="sevihover"> Sevi </span> is the bestest and the cutest
-   </div>
-   <div id="test">content</div>
-   <span id="s2">test</span>
+   <span class = "sp" id="sevihover"> Sevi </span>  <span class = "text">is the bestest and the cutest</span>
+   <img id="Sevi7" src="Sevi7300.jpg">
 </body>
