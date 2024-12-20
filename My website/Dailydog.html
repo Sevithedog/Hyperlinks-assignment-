@@ -45,6 +45,7 @@ a{
    left:500px;
    width: 500px;
    font-family: cursive;
+   text-align: center;
 }   
 .Dog{
    position: absolute;
@@ -65,10 +66,17 @@ a{
         <a href="Discover.html"><li>Discover</li></a>
 </ul>
 
-<div class="Dog">Doug The Pug</div>
+<div class="Dog">Random Dog</div>
 
 <p class="Who">
-"Doug loves the simple things in life. A good nose boop, a long nap. And, if we’re being honest… he also likes the perks of being the world’s most famous pug. The red carpets, the celebrity belly rubs, the designer bandanas — and, of course, the food. Pizza! Pinot! Pasta!" -Dougthepug.com</p>
-
+Refresh to find a random dog!</p>
 <img id="Doug" src="Dougthepug.jpg">
 </body>
+<script>
+   files = ['Randog1.jpg','Randog2.jpg','Randog3.jpg','Randog4.jpg','Randog5.jpg','Randog6.jpg','Randog7.jpg']
+   choice = Math.floor(Math.random()*7)
+   filename = files[choice]
+   console.log(choice)
+   console.log(filename)
+   document.getElementById('Doug').src=filename
+</script>
